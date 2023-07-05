@@ -1,2 +1,20 @@
 # weather-app
 This is the repo of the Weather app from my YouTube video
+
+# Project structure
+
+![Project setup image](/assets/project-structure.png)
+
+# What to do in the right order
+- Create account on [weatherapi.com](https://www.weatherapi.com) and generate a token
+- Clone repository to local and replace the token
+- Setup the tdengine cloud database on [tdengine.com](https://cloud.tdengine.com/login)
+- Create the weather database, stable and tables berlin and sanfrancisco
+- Run the code in your VSCode or other dev env and check tdengine if the data is there
+- Build the docker container `docker build -f dockerfile-user -t weather-data`
+- Create ECR, tag the image and push the image up to ECR (find the commands in ECR, top right)
+- Create Lambda that uses the image
+- Create EventBridge schedule that triggers the Lambda function
+- Pull the Grafana image from docker hub `docker pull grafana/grafana`
+- Start grafana with `docker run --name=grafana -p 3000:3000 grafana/grafana`
+- Go to localhost:3000, connect the tdengine datasource and create yourself a Dashboard
