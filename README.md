@@ -30,8 +30,10 @@ Here's an overview of the pipeline:
 - Try out the WeatherAPI interactive explorer: [explore the API](https://www.weatherapi.com/api-explorer.aspx)
 - TDEngine documentation of read/write through websocket!! (for TDengine cloud) [tdengine docs](https://docs.tdengine.com/reference/connector/python/)
 - AWS cli installation [AWS Documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- Ranking time series databases [dbengines.com](https://db-engines.com/en/ranking_trend/time+series+dbms)
 
 # More about TDengine
-- time series extentions like time weighted average rate of change and more [functions](https://docs.tdengine.com/taos-sql/function/#time-series-extensions)
-- Performance comparison influxdb timescaledb and TDengine [Benchmarks](https://tdengine.com/devops-performance-comparison-influxdb-and-timescaledb-vs-tdengine/)
+- TDengine docker image [visit Dockerhub](https://hub.docker.com/r/tdengine/tdengine)
 - TDengine stream processing, caching and data subscription [Streaming features](https://tdengine.com/tdengine/simplified-time-series-data-solution/)
+- time series extentions like time weighted average rate of change and more [functions](https://docs.tdengine.com/taos-sql/function/#time-series-extensions)
+- Performance comparison influxdb timescaledb and TDengine [Benchmark comparions](https://tdengine.com/devops-performance-comparison-influxdb-and-timescaledb-vs-tdengine/)
