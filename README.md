@@ -27,6 +27,7 @@ Here's an overview of the pipeline:
 
 
 # Helpful links
+- Try out the WeatherAPI interactive explorer: [explore the API](https://www.weatherapi.com/api-explorer.aspx)
 - TDEngine documentation of read/write through websocket!! (for TDengine cloud) [tdengine docs](https://docs.tdengine.com/reference/connector/python/)
 - AWS cli installation [AWS Documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
