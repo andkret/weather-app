@@ -10,6 +10,7 @@ This is the repo of the Weather app from my YouTube video
 - Clone repository to local and replace the token
 - Setup the tdengine cloud database on [tdengine.com](https://cloud.tdengine.com/login)
 - Create the weather database, stable and tables berlin and sanfrancisco
+- Install tdengine connector for python with `pip install taospy`
 - Run the code in your VSCode or other dev env and check tdengine if the data is there
 - Build the docker container `docker build -f dockerfile-user -t weather-data .`
 - If not done already install the AWS cli (see helpful links below)
