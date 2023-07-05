@@ -1,0 +1,10 @@
+FROM python:3.9
+
+COPY requirements.txt /tmp/
+
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --requirement /tmp/requirements.txt
+
+copy ./src/writer_json.py /src/writer_json.py
+
+ENTRYPOINT ["python","./src/writer_json.py"]
