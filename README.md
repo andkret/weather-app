@@ -16,12 +16,12 @@ Here's an overview of the pipeline:
 - Run the code in your VSCode or other dev env and check TDengine if the data is there
 - Build the docker container `docker build -f dockerfile-user -t weather-data .`
 - If not done already install the AWS cli (see helpful links below)
-- Create a development user and role with the rights to ecr, create keys for that user
+- Create a development user and role in IAM with full rights to ecr, create keys for that user
 - Do a `aws configure` and enter key and secret key
 - Create ECR, tag the image and push the image up to ECR (find the commands in ECR, top right corner)
 - Create Lambda that uses the image
 - Create EventBridge schedule that triggers the Lambda function
-- Pull the Grafana image from docker hub `docker pull grafana/grafana`
+- Pull the [Grafana image](https://hub.docker.com/r/grafana/grafana) from docker hub `docker pull grafana/grafana`
 - Start grafana with `docker run --name=grafana -p 3000:3000 grafana/grafana`
 - Go to localhost:3000 to access Grafana, connect the TDengine datasource and create yourself a Dashboard
 
